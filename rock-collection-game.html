@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Curated rock display case for Emma Kostecki's field and research collection."
+      content="Rock collection mini-game for Emma Kostecki's portfolio site."
     />
     <title>Emma Kostecki | Rock Collection</title>
     <link rel="stylesheet" href="styles.css?v=20260326" />
-    <link rel="stylesheet" href="rock-collection.css?v=20260326" />
+    <link rel="stylesheet" href="rock-collection-game.css?v=20260326" />
   </head>
   <body>
     <header class="site-header">
@@ -24,27 +24,29 @@
 
     <main class="container">
       <section id="rocks" class="section">
-        <h1>Emma's Rock Collection</h1>
+        <h1>Rock Collection</h1>
         <p class="rock-intro">
-          A curated inventory of rocks Emma has studied, found in the field, or has
-          a personal research connection with.
+          Stay on the page and watch for a claim prompt to earn random rocks.
+          Move your mouse over a selected rock to polish it.
         </p>
-        <div class="rock-display-layout">
+        <div class="rock-layout">
           <div>
             <h3 class="rock-subheading">Inventory</h3>
             <div id="rock-inventory" class="rock-grid"></div>
-            <p id="rock-empty" class="rock-empty">No rocks in the display case yet.</p>
-            <p class="rock-page-links">
-              Want the classic version? <a href="rock-collection-game.html">Open the original rock game</a>.
-            </p>
+            <p id="rock-empty" class="rock-empty">No rocks yet. Keep hanging out and claim one when prompted.</p>
           </div>
           <div class="rock-panel">
             <h3 id="selected-rock-name">No rock selected</h3>
-            <p id="selected-rock-meta" class="rock-detail-meta"></p>
-            <figure class="rock-detail-image-wrap">
-              <img id="selected-rock-image" class="rock-detail-image" src="" alt="" loading="lazy" decoding="async" />
-            </figure>
-            <div id="selected-rock-content" class="rock-detail-content"></div>
+            <p id="selected-rock-meta" class="rock-meta"></p>
+            <div id="polish-zone" class="polish-zone" aria-label="Polish rock area">
+              <span id="polish-rock-icon" class="polish-rock-icon">?</span>
+              <div id="polish-sparkles" class="polish-sparkles"></div>
+              <span id="polish-hint" class="polish-hint">Select a rock to start polishing</span>
+            </div>
+            <div class="polish-progress">
+              <div id="polish-progress-fill" class="polish-progress-fill"></div>
+            </div>
+            <p id="polish-status" class="polish-status"></p>
           </div>
         </div>
       </section>
@@ -56,6 +58,10 @@
       </div>
     </footer>
 
-    <script src="rock-collection.js?v=20260326"></script>
+    <button id="claim-rock-button" class="claim-rock-button" type="button">
+      Claim Rock
+    </button>
+
+    <script src="rock-collection-game.js?v=20260326"></script>
   </body>
 </html>
