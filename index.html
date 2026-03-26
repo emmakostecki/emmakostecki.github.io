@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio and project site for Emma Kostecki."
+    />
+    <title>Emma Kostecki | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="#">Emma Kostecki</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Emma Kostecki</h1>
+        <p class="subtitle">M.S. student in Earth, Atmospheric, and Planetary Sciences at Purdue University, focused on paleomagnetism, archaeomagnetism, and field-based geoscience research.</p>
+        <div class="hero-actions">
+          <a class="button" href="assets/emma-kostecki-cv-20260325.pdf">Download CV</a>
+          <a class="button button-secondary" href="#contact">Get in Touch</a>
+        </div>
+      </section>
+
+      <section id="projects" class="container section">
+        <h2>Research Highlights</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Archaeomagnetism in Southwest New Mexico</h3>
+            <p>Co-authored a published re-evaluation of regional archaeomagnetic data from the Mogollon culture, integrating lab analysis and field sampling.</p>
+          </article>
+          <article class="card">
+            <h3>Viscous Remanent Magnetization in Speleothems</h3>
+            <p>Undergraduate thesis and ongoing research on magnetization acquisition in cave formations, with manuscript in preparation.</p>
+          </article>
+          <article class="card">
+            <h3>International and U.S. Field Campaigns</h3>
+            <p>Conducted mapping and sampling in Brazil, Wyoming, South Dakota, Montana, Minnesota, and New Mexico across geological and archaeological contexts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="container section">
+        <h2>Experience Highlights</h2>
+        <ul>
+          <li>2025-Present: Graduate researcher, Purdue University (Advisor: Caue Borlina).</li>
+          <li>2024-2025: Laboratory Analyst, New Mexico Office of Archaeological Studies.</li>
+          <li>2022-2024: Researcher, Institute for Rock Magnetism (University of Minnesota).</li>
+          <li>Teaching Assistant for ESCI 1001 and ESCI 1005 at the University of Minnesota.</li>
+          <li>Awards include the AIPG Minnesota Undergraduate Award and Outstanding Undergraduate TA Award.</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="container section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:emma.kostecki@gmail.com">emma.kostecki@gmail.com</a></p>
+        <p>Phone: +1 (608) 516-2187</p>
+        <p>Resume: <a href="assets/emma-kostecki-cv-20260325.pdf">View CV (PDF)</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Emma Kostecki. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
