@@ -209,7 +209,10 @@ ul {
 .rock-card-icon img {
   width: 100%;
   height: 100%;
+  max-width: 28px;
+  max-height: 28px;
   object-fit: contain;
+  object-position: center;
   display: block;
 }
 
@@ -336,8 +339,16 @@ ul {
 .polish-rock-icon img {
   width: 100%;
   height: 100%;
+  max-width: 88px;
+  max-height: 88px;
   object-fit: contain;
+  object-position: center;
   display: block;
+}
+
+.polish-zone img {
+  max-width: 88px;
+  max-height: 88px;
 }
 
 .polish-sparkles {

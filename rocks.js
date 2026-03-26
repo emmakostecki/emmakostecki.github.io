@@ -23,10 +23,7 @@ const DIRT_RATE_BY_RARITY = {
 
 const rockPool = [
   { name: "Garnet Schist", icon: "", iconUrl: "assets/rock-collection/garnet-schist.png", rarity: "Common", polishRequired: 100, weight: 40 },
-  { name: "Quartz Nodule", icon: "💎", rarity: "Uncommon", polishRequired: 100, weight: 28 },
-  { name: "Granite Chunk", icon: "🗿", rarity: "Uncommon", polishRequired: 100, weight: 18 },
-  { name: "Labradorite Shard", icon: "✨", rarity: "Rare", polishRequired: 100, weight: 10 },
-  { name: "Meteoric Pebble", icon: "☄️", rarity: "Legendary", polishRequired: 100, weight: 4 }
+  { name: "Banded Iron Formation", icon: "", iconUrl: "assets/rock-collection/banded-iron-formation.png", rarity: "Rare", polishRequired: 100, weight: 10 },
 ];
 
 const state = {
