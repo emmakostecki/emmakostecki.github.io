@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rock collection mini-game for Emma Kostecki's portfolio site."
+    />
+    <title>Emma Kostecki | Rock Collection</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html">Emma Kostecki</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="rock-collection.html">Rock Collection</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="rocks" class="section">
+        <h1>Rock Collection</h1>
+        <p class="rock-intro">
+          Stay on the page and watch for a claim prompt to earn random rocks.
+          Move your mouse over a selected rock to polish it.
+        </p>
+        <div class="rock-layout">
+          <div>
+            <h3 class="rock-subheading">Inventory</h3>
+            <div id="rock-inventory" class="rock-grid"></div>
+            <p id="rock-empty" class="rock-empty">No rocks yet. Keep hanging out and claim one when prompted.</p>
+          </div>
+          <div class="rock-panel">
+            <h3 id="selected-rock-name">No rock selected</h3>
+            <p id="selected-rock-meta" class="rock-meta"></p>
+            <div id="polish-zone" class="polish-zone" aria-label="Polish rock area">
+              <span id="polish-rock-icon" class="polish-rock-icon">?</span>
+              <div id="polish-sparkles" class="polish-sparkles"></div>
+              <span id="polish-hint" class="polish-hint">Select a rock to start polishing</span>
+            </div>
+            <div class="polish-progress">
+              <div id="polish-progress-fill" class="polish-progress-fill"></div>
+            </div>
+            <p id="polish-status" class="polish-status"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Emma Kostecki. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button id="claim-rock-button" class="claim-rock-button" type="button">
+      Claim Rock
+    </button>
+
+    <script src="rocks.js"></script>
+  </body>
+</html>
