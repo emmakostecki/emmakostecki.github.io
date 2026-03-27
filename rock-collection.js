@@ -4,22 +4,22 @@ const ACTIVE_KEY = "displayCaseActiveRockId";
 
 const curatedRocks = [
   {
-    id: "garnet-schist-field",
-    name: "Garnet Schist",
-    inventoryIconUrl: "assets/rock-collection/garnet-schist.png",
-    detailImageUrl: "assets/rock-collection/garnet-schist.png",
+    id: "agate",
+    name: "Agate",
+    inventoryIconUrl: "assets/rock-collection/icon--agate.png",
+    detailImageUrl: "assets/rock-collection/icon--agate.png",
     connectionTags: ["Studied", "Found"],
-    context: "Minnesota field sampling",
+    context: "Field and personal collection",
     whyImportant:
-      "This sample connects field mapping with lab interpretation and is one of the clearest reminders of how textures record deformation history.",
+      "A favorite for showing banded growth textures and how observation in hand sample can connect to larger geologic history.",
     fieldNotes:
-      "Collected during a long outcrop day where structural measurements and hand-sample notes were taken together."
+      "Icon and detail image are linked for now; replace detailImageUrl with the final field photo whenever it is ready."
   },
   {
-    id: "banded-iron-formation-core",
+    id: "banded-iron-formation",
     name: "Banded Iron Formation",
-    inventoryIconUrl: "assets/rock-collection/banded-iron-formation.png",
-    detailImageUrl: "assets/rock-collection/banded-iron-formation.png",
+    inventoryIconUrl: "assets/rock-collection/icon--banded-iron-formation.png",
+    detailImageUrl: "assets/rock-collection/icon--banded-iron-formation.png",
     connectionTags: ["Studied", "Meaningful"],
     context: "Rock magnetism laboratory work",
     whyImportant:
@@ -28,16 +28,64 @@ const curatedRocks = [
       "Prepared and revisited in lab sessions to compare behavior across measurement methods."
   },
   {
-    id: "speleothem-section",
-    name: "Speleothem Section",
-    inventoryIconUrl: "assets/rock-collection/placeholder-icon.jpg",
-    detailImageUrl: "assets/rock-collection/placeholder-detail.jpg",
+    id: "garnet-schist",
+    name: "Garnet Schist",
+    inventoryIconUrl: "assets/rock-collection/icon--garnet-schist-new.png",
+    detailImageUrl: "assets/rock-collection/icon--garnet-schist-new.png",
+    connectionTags: ["Studied", "Found"],
+    context: "Recent field documentation",
+    whyImportant:
+      "Represents an updated sample image and helps compare visual differences between related garnet-bearing materials.",
+    fieldNotes:
+      "Updated to use the newer icon/photo set for this rock."
+  },
+  {
+    id: "mn-gneiss",
+    name: "MN Gneiss",
+    inventoryIconUrl: "assets/rock-collection/icon--mn-gneiss.png",
+    detailImageUrl: "assets/rock-collection/icon--mn-gneiss.png",
+    connectionTags: ["Studied", "Found"],
+    context: "Minnesota regional geology",
+    whyImportant:
+      "A foundational rock type for discussing regional metamorphic history and field identification practice.",
+    fieldNotes:
+      "Great teaching sample for foliation and compositional banding in hand specimen."
+  },
+  {
+    id: "rose-quartz",
+    name: "Rose Quartz",
+    inventoryIconUrl: "assets/rock-collection/icon--rose-quartz.png",
+    detailImageUrl: "assets/rock-collection/icon--rose-quartz.png",
+    connectionTags: ["Found", "Meaningful"],
+    context: "Personal and field connection",
+    whyImportant:
+      "Included for personal significance and as a contrasting mineral texture/color compared with darker metamorphic samples.",
+    fieldNotes:
+      "This is a good candidate for a future field-context photo once selected."
+  },
+  {
+    id: "speleothem",
+    name: "Speleothem",
+    inventoryIconUrl: "assets/rock-collection/icon--speleothem.png",
+    detailImageUrl: "assets/rock-collection/icon--speleothem.png",
     connectionTags: ["Studied", "Meaningful"],
     context: "Thesis and manuscript work",
     whyImportant:
-      "This piece represents a major through-line in Emma's research on viscous remanent magnetization in cave materials.",
+      "Represents a major through-line in Emma's research on viscous remanent magnetization in cave materials.",
     fieldNotes:
-      "Placeholder text and image path for now - swap with a real cave or sample photo when ready."
+      "Ties together field context, sample processing, and interpretation in ongoing writing."
+  },
+  {
+    id: "vesicular-basalt",
+    name: "Vesicular Basalt",
+    inventoryIconUrl: "assets/rock-collection/icon--vesicular-basalt.png",
+    detailImageUrl: "assets/rock-collection/icon--vesicular-basalt.png",
+    connectionTags: ["Studied", "Found"],
+    context: "Volcanic field context",
+    whyImportant:
+      "Helpful for showing volcanic textures and discussing gas escape features preserved in igneous rocks.",
+    fieldNotes:
+      "Strong visual entry for the display-case layout because vesicles read clearly in icon form."
   }
 ];
 
